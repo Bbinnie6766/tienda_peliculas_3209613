@@ -1,18 +1,33 @@
 import './App.css'
 import { User } from './components/User'
+import { User1 } from './components/User1'
+import { Usser2 } from './components/Usser2'
 
 export const App = () => {
   return (
     <>
-      <div className='circle'>  </div>
-      <p style={{ fontSize: "2rem", color: "red", textDecoration: "underline" }}>Hola React  </p>
-      <p>Hola JavaScript </p>
-      <button>Enviar</button>
-      <h1>Tarjeta de usuario</h1>
+    <div className='banner'>
+      <User1/>
+    </div>
 
-      <User image="../cuervos" nombre="" estados="">  </User>
-      <User image="../dragones" nombre="" estados="">  </User>
-      <User image="../user" nombre="" estados="">  </User>
+    <div className='texto'>
+      <Usser2/>
+    </div>
+
+    <div className='tarjetas'>
+      <User />
+      <User />
+      <User />
+      <User />
+      <User />
+      <User />
+      <User />
+      <User />
+      <User />
+      <User />
+      <User />
+      <User />
+    </div>
     </>
   )
 }
